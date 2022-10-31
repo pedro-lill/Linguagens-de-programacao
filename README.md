@@ -303,4 +303,13 @@ convençoes:
 
     a palavra chave where faz parte da definição de f
     z nao faz parte de f
+    
+    
+
+    firstOrEmpty lst = if not(null lst)
+                    then head lst
+                    else "empty"
+                    
+    essa funcao só retorna se a lista tiver strings, se for uma lista de ints ela da erro
+    porque no
      
