@@ -11,22 +11,37 @@ data Pessoa = Pessoa String String Genero
 data Genero = Masculino | Feminino | Outro
             deriving Show
 
-nomeCliente :: Cliente -> String
-nomeCliente cliente = case cliente of
-                        OrgGov nome
-                        Empresa nome id resp cargo
-                        Individuo pessoa ads
-                            case pessoa of
-                                Pessoa pNome sNome g
+--nomeCliente :: Cliente -> String
+--nomeCliente cliente = case cliente of
+  --                      OrgGov nome
+    --                    Empresa nome id resp cargo
+      --                  Individuo pessoa ads
+        --                    case pessoa of
+          --                      Pessoa pNome sNome g
 
 
-nomeCliente' :: Cliente -> String
-nomeCliente' cliente =
-        case cliente of
-            OrgGov nome
-            Empresa nome
-            Individuo (Pessoa pNome sNome _)_
+--nomeCliente' :: Cliente -> String
+--nomeCliente' cliente =
+  --      case cliente of
+    --        OrgGov nome
+      --      Empresa nome
+        --    Individuo (Pessoa pNome sNome _)_
 
+
+primeiro :: [Int]-> Int
+primeiro (x:xs) = x
+
+cauda :: [Int] -> [Int]
+cauda (x:xs) = xs
+
+fst3 :: (Int, Int, Int) -> Int
+fst3 (x,_,_) = x
+
+trd3 :: (Int, Int, Int) -> Int
+trd3(_,_,x) = x
+
+--mostraPessoa :: Pessoa-> String
+--mostraPessoa (Pessoa n s) = n ++ "" ++ s
 
 
 
