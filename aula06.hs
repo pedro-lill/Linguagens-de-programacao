@@ -28,3 +28,13 @@ funcUm x =  (dobro x)^2
 
 
 funcTres a b c = (a + b + c)/3
+
+
+data Nat = Zero
+       | Suc Nat
+       
+Zero:: Nat
+Zero = Zero
+
+Um:: Nat
+Um = Suc Zero
